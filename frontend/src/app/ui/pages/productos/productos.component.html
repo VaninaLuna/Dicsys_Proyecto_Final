@@ -1,0 +1,31 @@
+<app-header></app-header>
+<section>   
+    <div class="center">
+      <div id="contenido">
+        <div class="Productos">
+          <h1>Productos de: {{ categoria.nombre }}</h1>
+          <div class="button-container">
+            <button class="createButton" (click)="navigateCreateProducts()" >Crear Producto</button>
+          </div>
+          <div id="listProductos">
+            <article
+              class="item-prod" id="article-template" *ngFor="let prod of listProducts">
+              <div class="image-wrap">
+                <img src={{prod.url_img}} alt="comida" />
+              </div>
+              <h2>{{prod.nombre}}</h2>
+              <div class="cont-spanProd">
+                <span class="span-cardProd">Vencimiento: {{prod.fecha_vencimiento}}</span><br />
+              </div>
+              <span class="precio-prod">Precio: {{prod.precio}}</span
+              ><br />
+              <span class="stock-prod">Stock: {{prod.stock}}</span><br />
+              <span><b>- Categoria: {{ categoria.nombre }}</b></span>
+              <button class = "button-delete" (click)="eliminarProducto(prod.id)">- Eliminar</button>
+              <button class = "button-edit" (click)="navigateCreateProducts(prod)">+ Editar</button> 
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<app-header></app-header>
+    <app-slider />
+<div id="home">
+  <div class="center">
+    <div id="contenido">
+      <h1 class="subheader">{{this.globalText.home.subheader}}</h1>
+      <div id="listCards">
+        <div class="colLista">
+          <div class="cardd" *ngFor="let categoria of arrayCategorias" > 
+            <!-- <div>
+              <img src="https://img.freepik.com/vector-gratis/ilustracion-festival-vectorial-mercado-comida-callejera-stand-tienda-bocadillos-parque-dibujos-animados-evento-al-aire-libre-verano-hamburguesas-sandwiches-restaurante-juego-urbano-2d-vender-productos-panaderia-almuerzo_107791-24458.jpg" />
+            </div> -->
+
+            <div class="image-wrap">
+              <img src={{categoria.url_img}} alt="comida" />
+            </div>
+
+            <div class="contenidooo">
+              <h3>{{categoria.nombre}}</h3>
+              <button (click)="navigateProducts(categoria)">{{this.globalText.home.botonVerProductos}}</button>
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+#footer {
+    height: 55px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background: rgb(33, 61, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+    
+  .center {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  #brand {
+    color: rgb(255, 251, 251);
+    font-size: 14px;
+  }

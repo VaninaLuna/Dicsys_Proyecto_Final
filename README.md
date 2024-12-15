@@ -1,2 +1,3 @@
-# Dicsys_Proyecto_Final
- Proyecto final de la Dicsys Academy
+# Dicsys Proyecto Final
+ Proyecto final de la Dicsys Academy realizado con node y angular
+
