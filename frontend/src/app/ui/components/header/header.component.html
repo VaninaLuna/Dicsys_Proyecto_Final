@@ -6,11 +6,8 @@
         <span id="brand">{{ globalText.header.titulo }}</span>
       </div>
       <nav id="menu">
-        <ul>
-          <li (click)="navigateHome()">{{ globalText.header.categoria }}</li>
-          <li>{{ globalText.header.carrito }}</li>
-          <li>{{ globalText.header.login }}</li>
-        </ul>
+        
+        <button (click)="navigateHome()">{{ globalText.header.categoria }}</button>
       </nav>
     </div>
   </header>

@@ -65,8 +65,8 @@
 
 .cardd button {
   color: white;
-  border: 1px rgba(0, 0, 0, 0.2);
-  background: #00438e;
+  border: 1px rgb(118, 72, 20);
+  background: rgb(224, 145, 55);
   padding: 5px;
   border-radius: 4px;
   margin-bottom: 10px;

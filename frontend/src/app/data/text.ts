@@ -1,17 +1,17 @@
 export class globalText {
     // public subTitulo = 'Estamos desarrollando un proyecto en Angular'
-    
-    public header ={
+
+    public header = {
         titulo: 'Dicsys Compras',
-        categoria: 'Categoria',
-         carrito: 'Carrito',
+        categoria: 'Home',
+        carrito: 'Carrito',
         login: 'Login'
     }
 
     public footer = {
-         tituloFooter:'Desarrollado por Vanina Luna - 2024'
+        tituloFooter: 'Desarrollado por Vanina Luna - 2024'
     }
-    
+
 
     public home = {
         subheader: 'NUESTRAS CATEGORIAS',
@@ -20,7 +20,7 @@ export class globalText {
         botonVerProductos: 'Ver sus productos',
         botonVerProductosPorCategoria: 'Productos por Categoria',
     }
-    
+
     public slider = {
         titulo: 'Bienvenido a la Dicsys Feria',
         horario: 'Lunes a Viernes de 9 a 18'

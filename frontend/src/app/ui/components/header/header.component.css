@@ -3,7 +3,7 @@
     width: 100%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    background: rgb(98, 207, 86);
+    background: rgb(224, 145, 55);
     display: flex;
     align-items: center;
 }
@@ -54,4 +54,19 @@
 
 #menu ul li {
     list-style: none;
+}
+nav button {
+    background-color: rgb(177, 113, 40);
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: rgb(118, 72, 20);
+    color: white;
 }
