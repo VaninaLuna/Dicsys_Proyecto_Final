@@ -20,7 +20,7 @@ frontend/.vscode/
 
 ### Node ###
 backend/node_modules/
-backend/.env
+# backend/.env
 
 
 # IDEs and editors
