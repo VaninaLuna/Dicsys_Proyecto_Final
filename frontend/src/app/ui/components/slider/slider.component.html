@@ -1,4 +1,20 @@
-<div id="slider" class="slider">
+<!-- <div id="slider" class="slider">
     <h1>{{this.globalText.slider.titulo}}</h1>
     <h3>{{this.globalText.slider.horario}}</h3>
+  </div> -->
+
+  <div id="slider" class="slider"(mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+    <div class="carousel">
+      <div class="carousel-inner" [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">
+        <div class="carousel-item" *ngFor="let categoria of arrayCategorias">
+          <img [src]="categoria.url_img" [alt]="categoria.nombre">
+          <div class="carousel-caption">
+            <h5>{{categoria.nombre}}</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control prev" (click)="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" (click)="nextSlide()">&#10095;</button>
+    </div>
   </div>
+  
