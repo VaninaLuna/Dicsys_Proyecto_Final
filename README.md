@@ -11,7 +11,7 @@ Este proyecto es un e-commerce orientado a un sistema de delivery, desarrollado 
 - **dotenv** para la gestión de variables de entorno.
 
 ### Frontend
-- **Angular v18**.
+- **Angular**.
 - **Angular Router** para la navegación.
 - **HttpClient** para la comunicación con el backend.
 
