@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { globalText } from '../../../data/text';
 import { NgFor } from '@angular/common';
+import { CategoriasService } from '../../../data/services/categorias/categorias.service';
 
 @Component({
   selector: 'app-slider',
@@ -10,19 +11,22 @@ import { NgFor } from '@angular/common';
   styleUrl: './slider.component.css'
 })
 export class SliderComponent {
-  arrayCategorias: any[] = [];
+  arrayCategorias: any = [];
   currentSlide: number = 0;
   autoSlideInterval: any;
   constructor(
-    public globalText: globalText
-  ) { }
+    public globalText: globalText,
+    public categoriasService: CategoriasService,
+  ) { 
+    
+   
+  }
 
 
   ngOnInit(): void {
-    this.arrayCategorias = [
-      { nombre: 'Bebidas', url_img: 'https://acdn.mitiendanube.com/stores/001/551/869/products/a6d27fb3-5b87-445f-a4cf-c0912942b5571-c194e7863699c9fbb816675731622885-1024-1024.png' },
-      { nombre: 'Jugutes', url_img: 'https://quimica.uchile.cl/dam/jcr:1f87abca-741d-406f-b866-26743ce3943c/juguetes-1.jpg' },
-    ];
+    this.categoriasService.getCategory().subscribe(result => {
+      this.arrayCategorias = result
+    });
 
     this.startAutoSlide();
   }
@@ -30,7 +34,7 @@ export class SliderComponent {
   startAutoSlide(): void {
     this.autoSlideInterval = setInterval(() => {
       this.nextSlide();
-    }, 3000);
+    }, 2000);
   }
 
   stopAutoSlide(): void {
