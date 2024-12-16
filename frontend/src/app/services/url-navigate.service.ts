@@ -10,7 +10,7 @@ export class UrlNavigateService {
 
   //navegar sin pasar datos
   navigateUrl(url : string){
-    this.router.navigateByUrl(url);  // Replace 'home' with your desired route
+    this.router.navigateByUrl(url);
   }
 
   //navegar pasando datos
