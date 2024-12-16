@@ -7,7 +7,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
 import { Url } from '../../../data/url';
 import { NgFor } from '@angular/common';
 import { CategoriasService } from '../../../data/services/categorias/categorias.service';
-// import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-home',
@@ -33,6 +33,8 @@ export class HomeComponent {
       this.arrayCategorias = result
     });
   }
+
+  
 
   navigateProducts(categoria: any) {
     this.urlNavigateService.navigateUrlData(this.url.products, {
