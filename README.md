@@ -27,7 +27,7 @@ Este proyecto es un e-commerce orientado a un sistema de delivery, desarrollado 
 Dicsys_Proyecto_Final/
 ├── backend/       # Código del backend
 ├── frontend/      # Código del frontend
-└── database.sql   # Archivo de exportación de la base de datos
+└── bd.sql   # Archivo de exportación de la base de datos
 ```
 
 ## Instrucciones para ejecutar el proyecto
