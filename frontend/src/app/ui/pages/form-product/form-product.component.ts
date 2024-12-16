@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { UrlNavigateService } from '../../../services/url-navigate.service';
 import { Url } from '../../../data/url';
 import { HeaderComponent } from '../../components/header/header.component';
+import { globalText } from '../../../data/text';
 
 @Component({
   selector: 'app-form-product',
@@ -37,6 +38,7 @@ export class FormProductComponent {
     public productoService: ProductosService,
     public urlNavigateService: UrlNavigateService,
     public url: Url,
+    public globalText: globalText,
   ) {
 
     const navegabilidad = this.router.getCurrentNavigation();

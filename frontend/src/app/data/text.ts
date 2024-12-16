@@ -2,7 +2,7 @@ export class globalText {
     // public subTitulo = 'Estamos desarrollando un proyecto en Angular'
 
     public header = {
-        titulo: 'Dicsys Compras',
+        titulo: 'Dicsys Delivery',
         categoria: 'Home',
         carrito: 'Carrito',
         login: 'Login'
@@ -22,9 +22,29 @@ export class globalText {
     }
 
     public slider = {
-        titulo: 'Bienvenido a la Dicsys Feria',
-        horario: 'Lunes a Viernes de 9 a 18'
+        titulo: 'Bienvenido a Dicsys Delivery',
+        horario: 'Nuestro horario de atencion es de: ',
+        horario2: 'Lunes a Sabados de 11 a 22 horas',
+        descripcion:"¿Tienes hambre?",
+        descripcion2: "Descubre nuestras categorías con productos frescos, deliciosos y listos para disfrutar. ¡Explora, elige y recibe tu pedido en minutos!",
 
+    }
+
+    public form = {
+        titulo: 'Agregar Producto',
+        nombre: 'Nombre',
+        fecha: 'Fecha de Vencimiento',
+        stock: 'Stock',
+        precio: 'Precio',
+        urlImagen: 'URL Imagen',
+    }
+
+    public productos ={
+        titulo: 'Productos de',
+        vencimiento: 'Vencimiento',
+        precio: 'Precio',
+        stock: 'Stock',
+        categoria: 'Categoria',
     }
 
 }
