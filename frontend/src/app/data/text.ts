@@ -1,5 +1,4 @@
 export class globalText {
-    // public subTitulo = 'Estamos desarrollando un proyecto en Angular'
 
     public header = {
         titulo: 'Dicsys Delivery',
