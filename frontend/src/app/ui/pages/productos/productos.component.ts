@@ -29,7 +29,7 @@ export class ProductosComponent {
     public productoService: ProductosService,
     public urlNavigateService: UrlNavigateService,
     public url: Url,
-    // public urlNavigateService: UrlNavigateService
+    
   ) {
 
     const navegabilidad = this.router.getCurrentNavigation();
