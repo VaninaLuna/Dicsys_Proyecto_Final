@@ -1,7 +1,7 @@
 #header {
     height: 55px;
     width: 100%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     background: rgb(224, 145, 55);
     display: flex;
@@ -29,9 +29,7 @@
 
 #logo h1 {
     margin: 0;
-    /* Elimina el margen predeterminado del h1 */
     font-size: 1.5rem;
-    /* Ajusta el tamaño del texto si es necesario */
 }
 
 #brand {
@@ -55,6 +53,7 @@
 #menu ul li {
     list-style: none;
 }
+
 nav button {
     background-color: rgb(177, 113, 40);
     color: whitesmoke;
