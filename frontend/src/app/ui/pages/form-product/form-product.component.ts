@@ -5,11 +5,12 @@ import { ProductosService } from '../../../data/services/productos/productos.ser
 import { FormsModule } from '@angular/forms';
 import { UrlNavigateService } from '../../../services/url-navigate.service';
 import { Url } from '../../../data/url';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-form-product',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, HeaderComponent],
   templateUrl: './form-product.component.html',
   styleUrl: './form-product.component.css'
 })

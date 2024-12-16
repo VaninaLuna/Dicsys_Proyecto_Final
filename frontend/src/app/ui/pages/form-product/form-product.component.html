@@ -1,21 +1,57 @@
-<div class="form-container">
-    <form action="#" method="post">
+<app-header></app-header>
+<section>
+  <div class="center">
+    <div class="form-container">
+      <form action="#" method="post" class="form">
         <h2>Agregar Producto</h2>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" [(ngModel)]="product.nombre" required>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          [(ngModel)]="product.nombre"
+          required
+        />
 
         <label for="fecha">Fecha de Vencimiento:</label>
-        <input type="date" id="fecha" name="fecha" [(ngModel)]="product.fecha_vencimiento" required>
+        <input
+          type="date"
+          id="fecha"
+          name="fecha"
+          [(ngModel)]="product.fecha_vencimiento"
+          required
+        />
 
         <label for="stock">Stock:</label>
-        <input type="number" id="stock" name="stock" [(ngModel)]="product.stock" required>
+        <input
+          type="number"
+          id="stock"
+          name="stock"
+          [(ngModel)]="product.stock"
+          required
+        />
 
         <label for="precio">Precio:</label>
-        <input type="number" id="precio" name="precio" step="0.01" [(ngModel)]="product.precio" required>
+        <input
+          type="number"
+          id="precio"
+          name="precio"
+          step="0.01"
+          [(ngModel)]="product.precio"
+          required
+        />
 
         <label for="urlImagen">URL Imagen:</label>
-        <input type="url" id="urlImagen" name="urlImagen" [(ngModel)]="product.url_img" required>
+        <input
+          type="url"
+          id="urlImagen"
+          name="urlImagen"
+          [(ngModel)]="product.url_img"
+          required
+        />
 
         <button type="submit" (click)="guardarProduct()">Guardar</button>
-    </form>
-</div>
+      </form>
+    </div>
+  </div>
+</section>
